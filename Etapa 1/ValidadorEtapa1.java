@@ -42,27 +42,27 @@ public class ValidadorEtapa1 {
 		System.out.println(loja1.tamanhoDaLoja() == 'P' ? "[OK] Método Loja.tamanhoDaLoja()" : "[NOK] Método Loja.tamanhoDaLoja()");
 		
 		
-		//// Verificação da classe Produto
-		// Produto p1 = new Produto("Cubo mágico", 10);
-		// System.out.println("\n[OK] Classe Produto identificada");
+		// Verificação da classe Produto
+		Produto p1 = new Produto("Cubo mágico", 10);
+		System.out.println("\n[OK] Classe Produto identificada");
 		
-		// //public void setNome(String nome);
-		// p1.setNome("Cubo maravilha");
-		// System.out.println("[OK] Método Produto.setNome()");
+		//public void setNome(String nome);
+		p1.setNome("Cubo maravilha");
+		System.out.println("[OK] Método Produto.setNome()");
 	
-		// //public String getNome();
-		// System.out.println(p1.getNome().equals("Cubo maravilha") ? "[OK] Método Produto.getNome()" : "[NOK] Método Produto.getNome()");
+		//public String getNome();
+		System.out.println(p1.getNome().equals("Cubo maravilha") ? "[OK] Método Produto.getNome()" : "[NOK] Método Produto.getNome()");
 
-		// //public void setPreco(double preco);		
-		// p1.setPreco(20);
-		// System.out.println("[OK] Método Produto.setPreco()");
+		//public void setPreco(double preco);		
+		p1.setPreco(20);
+		System.out.println("[OK] Método Produto.setPreco()");
 		
-		// //public double getPreco();
-		// System.out.println(p1.getPreco() == 20 ? "[OK] Método Produto.getPreco()" : "[NOK] Método Produto.getPreco()");
+		//public double getPreco();
+		System.out.println(p1.getPreco() == 20 ? "[OK] Método Produto.getPreco()" : "[NOK] Método Produto.getPreco()");
 		
-		// //public String toString();
-		// p1.toString();
-		// System.out.println("[OK] Método Produto.toString()");
+		//public String toString();
+		p1.toString();
+		System.out.println("[OK] Método Produto.toString()");
 		
 		// //// Verificação da classe Endereco
 		// //instância
