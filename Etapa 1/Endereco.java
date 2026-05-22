@@ -56,6 +56,7 @@ public class Endereco {
         this.cep = cep;
     }
 
+    //get e set do numero
     public String getNumero() {
         return numero;
     }
@@ -63,6 +64,7 @@ public class Endereco {
         this.numero = numero;
     }
 
+    //get e set do complemento
     public String getComplemento() {
         return complemento;
     }
