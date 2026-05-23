@@ -40,4 +40,28 @@ public class Data {
     private boolean verificaAnoBissexto(int ano) {
         return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
     }
+
+    //get e set do dia
+    public int getDia() {
+        return dia;
+    }
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    //get e set do me
+    public int getMes() {
+        return mes;
+    }
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    //get e set do ano
+    public int getAno() {
+        return ano;
+    }
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
 }
