@@ -94,4 +94,15 @@ public class Loja {
             return 'G';
         }
     }
+    
+    @Override
+    public String toString() {
+        return "Loja {" +
+               "nome='" + nome + '\'' +
+               ", quantidadeFuncionarios=" + quantidadeFuncionarios +
+               ", salarioBaseFuncionario=" + salarioBaseFuncionario +
+               ", endereco=" + endereco +
+               ", dataFundacao=" + dataFundacao +
+               '}';
+    }
 }

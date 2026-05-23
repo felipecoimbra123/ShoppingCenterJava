@@ -53,4 +53,13 @@ public class Produto {
         }
         return dataValidade.getDia() < dataHoje.getDia();
     }
+
+    @Override
+    public String toString() {
+        return "Produto {" +
+           "nome='" + nome + '\'' +
+           ", preco=" + preco +
+           ", dataValidade=" + dataValidade +
+           '}';
+}
 }

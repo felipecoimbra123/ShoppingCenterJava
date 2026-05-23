@@ -30,6 +30,8 @@ public class Principal {
                 } else {
                     System.out.println("Produto não está vencido!");
                 }
+
+                opcao = 3;
             }
 
         }
