@@ -5,6 +5,7 @@ public class Loja {
     private Endereco endereco;
     private Data dataFundacao;
 
+    //etapa 2
     public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
@@ -13,10 +14,26 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
+    //etapa 1
+    public Loja(String nome, int quantidadeFuncionarios, int salarioBaseFuncionario) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+    }
+
+    //etapa 1
     public Loja(String nome, int quantidadeFuncionarios) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = -1;
+    }
+
+    //etapa 2
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
     }
 
     //get e set do nome da loja
