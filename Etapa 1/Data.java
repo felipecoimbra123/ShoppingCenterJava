@@ -37,7 +37,7 @@ public class Data {
         return dia >= 1 && dia <= diasMes;
     }
 
-    private boolean verificaAnoBissexto() {
+    public boolean verificaAnoBissexto() {
         return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
     }
 
