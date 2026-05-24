@@ -6,7 +6,33 @@ public class Loja {
     private Data dataFundacao;
     private Produto[] estoqueProdutos;
 
-    //etapa 2
+    //etapa 1
+    public Loja(String nome, int quantidadeFuncionarios, int salarioBaseFuncionario) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.estoqueProdutos = new Produto[10]; // Inicialização segura
+    }
+
+    //etapa 1
+    public Loja(String nome, int quantidadeFuncionarios) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = -1;
+        this.estoqueProdutos = new Produto[10]; // Inicialização segura
+    }
+
+    //etapa 2 e 3 
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = -1;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
+        this.estoqueProdutos = new Produto[10]; // Tamanho padrão para Etapa 2 e 3
+    }
+
+    //etapa 2 e 3
     public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
@@ -16,27 +42,24 @@ public class Loja {
         this.estoqueProdutos = new Produto[10];
     }
 
-    //etapa 1
-    public Loja(String nome, int quantidadeFuncionarios, int salarioBaseFuncionario) {
-        this.nome = nome;
-        this.quantidadeFuncionarios = quantidadeFuncionarios;
-        this.salarioBaseFuncionario = salarioBaseFuncionario;
-    }
-
-    //etapa 1
-    public Loja(String nome, int quantidadeFuncionarios) {
+    //etapa 4 - sem salario
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao, int capacidadeEstoque) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = -1;
-    }
-
-    //etapa 2 -  - sem salario
-    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
-        this.nome = nome;
-        this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.endereco = endereco;
         this.dataFundacao = dataFundacao;
-        this.estoqueProdutos = new Produto[10];
+        this.estoqueProdutos = new Produto[capacidadeEstoque];
+    }
+
+    //etapa 4 - com salario
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao, int capacidadeEstoque) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
+        this.estoqueProdutos = new Produto[capacidadeEstoque];
     }
 
     //get e set do nome da loja
@@ -80,7 +103,7 @@ public class Loja {
     }
 
     //get e set do estoque dos produtos
-    public Produto[] geEstoqueProdutos() {
+    public Produto[] getEstoqueProdutos() {
         return estoqueProdutos;
     }
 
@@ -107,7 +130,7 @@ public class Loja {
         }
     }
 
-    public void imprimeProduto() {
+    public void imprimeProdutos() {
         for(Produto p : estoqueProdutos) {
             if(p != null) {
                 System.out.println(p);

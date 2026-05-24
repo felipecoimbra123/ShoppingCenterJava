@@ -1,8 +1,14 @@
 public class Bijuteria extends Loja {
     private double metaVendas;
 
+    //etapa 3
     public Bijuteria(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao, double metaVendas) {
         super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, dataFundacao);
+        this.metaVendas = metaVendas;
+    }
+    //etapa 4
+    public Bijuteria(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao, double metaVendas, int capacidadeEstoque) {
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, dataFundacao, capacidadeEstoque);
         this.metaVendas = metaVendas;
     }
 
