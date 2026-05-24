@@ -11,7 +11,7 @@ public class Informatica extends Loja {
         return seguroEletronicos;
     }
 
-    public void setSeguroEletronicos() {
+    public void setSeguroEletronicos(double seguroEletronicos) {
         this.seguroEletronicos = seguroEletronicos;
     }
 

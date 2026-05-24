@@ -11,7 +11,7 @@ public class Vestuario extends Loja {
         return produtosImportados;
     }
 
-    public void setProdutosImportados() {
+    public void setProdutosImportados(double produtosImportados) {
         this.produtosImportados = produtosImportados;
     }
 

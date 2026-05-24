@@ -11,7 +11,7 @@ public class Alimentacao extends Loja {
         return dataAlvara;
     }
 
-    public void setDataAlvara() {
+    public void setDataAlvara(Data dataAlvara) {
         this.dataAlvara = dataAlvara;
     }
 

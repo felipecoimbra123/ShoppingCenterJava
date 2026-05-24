@@ -11,7 +11,7 @@ public class Bijuteria extends Loja {
         return metaVendas;
     }
 
-    public void setMetaVendas() {
+    public void setMetaVendas(double metaVendas) {
         this.metaVendas = metaVendas;
     }
 
