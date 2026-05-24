@@ -60,19 +60,19 @@ public class Shopping {
             if(loja == null) continue;
 
             switch (tipo) {
-                case "Cosmetico":
+                case "Cosmético":
                     if(loja instanceof Cosmetico) contador++;
                     break;
-                case "Vestuario":
+                case "Vestuário":
                     if(loja instanceof Vestuario) contador++;
                     break;
                 case "Bijuteria":
                     if(loja instanceof Bijuteria) contador++;
                     break;
-                case "Alimentacao":
+                case "Alimentação":
                     if(loja instanceof Alimentacao) contador++;
                     break;
-                case "Informatica":
+                case "Informática":
                     if(loja instanceof Informatica) contador++;
                     break;
                 
